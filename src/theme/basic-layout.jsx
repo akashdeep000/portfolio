@@ -19,12 +19,14 @@ export const BasicLayout = ({ children }) => {
       </Head>
       <Nav />
       <HeadingContext.Provider value={ref}>
-        {opts.hasJsxInH1 ? (
+        {/*
+        opts.hasJsxInH1 ? (
           <h1 className="m!-0 !mt-3 !p-0 font-sans tracking-wide" ref={ref} />
         ) : null}
         {opts.hasJsxInH1 ? null : (
           <h1 className="!m-0 !p-0 font-sans tracking-wide">{opts.title}</h1>
-        )}
+        )
+          */}
         {children}
         {config.footer}
       </HeadingContext.Provider>

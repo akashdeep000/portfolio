@@ -24,9 +24,9 @@ export default function ThemeSwitch() {
       }}
     >
       {mounted && isDark ? (
-        <MoonIcon className="w-4 h-4 stroke-gray-400" />
+        <MoonIcon className="w-4 h-4 stroke-gray-200" />
       ) : (
-        <SunIcon className="w-4 h-4 stroke-gray-600" />
+        <SunIcon className="w-4 h-4 stroke-gray-700" />
       )}
     </span>
   );

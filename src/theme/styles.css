@@ -17,7 +17,7 @@ body {
 }
 
 article {
-  @apply mx-auto block py-12;
+  @apply mx-auto block py-8;
 }
 
 article img {
