@@ -4,14 +4,20 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node ./src/scripts/gen-rss.js && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "clsx": "^2.0.0",
+    "gray-matter": "^4.0.3",
+    "next": "latest",
+    "next-themes": "^0.2.1",
+    "nextra": "^2.13.1",
     "react": "latest",
     "react-dom": "latest",
-    "next": "latest"
+    "rss": "^1.2.2"
   },
   "devDependencies": {
     "autoprefixer": "latest",

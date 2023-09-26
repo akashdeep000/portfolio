@@ -1,0 +1,47 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./styles/variables.css";
+@import "./styles/code-block.css";
+@import "./styles/subheading-anchor.css";
+@import "./styles/scrollbar.css";
+@import "./styles/steps.css";
+@import "./styles/cards.css";
+
+html {
+  @apply scroll-pt-5;
+}
+
+body {
+  @apply px-4;
+}
+
+article {
+  @apply mx-auto block py-12;
+}
+
+article img {
+  @apply mx-auto;
+}
+
+h1 {
+  letter-spacing: -0.03em;
+}
+
+.prose code {
+  &:before,
+  &:after {
+    @apply hidden;
+  }
+  .line {
+    @apply font-normal;
+  }
+}
+
+.prose .nextra-callout p {
+  @apply m-0;
+}
+
+.footnotes a[data-footnote-backref] {
+  font-family: initial;
+}
