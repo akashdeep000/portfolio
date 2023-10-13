@@ -65,7 +65,7 @@ export default function Meta() {
       </div>
       <div className="flex items-center gap-3 print:hidden">
         {back && (
-          <Link href={back} passHref legacyBehavior>
+          <Link href={back.endsWith("/posts") ? back.replace("/posts") : back} passHref legacyBehavior>
             <a>Back</a>
           </Link>
         )}
