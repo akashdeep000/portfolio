@@ -7,7 +7,7 @@ import { getParent } from "./utils/parent";
 export default function Meta() {
   const { opts, config } = useBlogContext();
   const { author, date, tag } = opts.frontMatter;
-  const { back } = getParent({ opts, config });
+  //const { back } = getParent({ opts, config });
   const tags = tag ? split(tag) : [];
 
   const tagsEl = tags.map((t) => (
@@ -62,17 +62,7 @@ export default function Meta() {
           </div>
         )}
       </div>
-      <div className="flex items-center gap-3 print:hidden">
-        {back && (
-          <Link
-            href={back.endsWith("/posts") ? back.replace("/posts", "") : back}
-            passHref
-            legacyBehavior
-          >
-            <a>Back</a>
-          </Link>
-        )}
-      </div>
+      <div className="flex items-center gap-3 print:hidden"></div>
     </div>
   );
 }
